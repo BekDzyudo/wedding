@@ -1,0 +1,56 @@
+:root {
+  --phone-max-width: 420px;
+  --screen-top: 9%;     /* Telefon rasmingizga qarab moslang */
+  --screen-left: 6%;
+  --screen-width: 88%;
+  --screen-height: 82%;
+}
+
+/* Mockup container */
+.phone-mockup {
+  width: min(var(--phone-max-width), 90vw);
+  aspect-ratio: 375 / 812;
+  margin: 0px auto;
+  position: relative;
+  background-image: url("../../public/mobilefonsiz.PNG");
+  background-repeat: no-repeat;
+  background-size: 250%;
+  background-position: center;
+}
+
+/* Screen wrapper (iframe joylashadigan joy) */
+.screen-wrapper {
+  position: absolute;
+   top: 18.5%;
+  left: 16%;
+  width: 67.9%;
+  height: 66.3%;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+  overflow: auto;
+}
+
+/* Iframe sahifa */
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+@media only screen and (max-width: 500px) {
+  .phone-mockup {
+  width: min(var(--phone-max-width), 100vw);
+}
+  .screen-wrapper {
+  border-radius: 27px;
+}
+}
+@media only screen and (max-width: 420px) {
+    .phone-mockup {
+  width: min(var(--phone-max-width), 100vw);
+}
+  .screen-wrapper {
+  border-radius: 23px;
+}
+}

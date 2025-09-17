@@ -1,0 +1,11 @@
+.wedding{
+    height: 100vh;
+    background-image: url("../public/desktop.jpg");
+    background-size: cover;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .wedding{
+    background-image: url("../public/mobilefon3.jpg");
+}
+}
