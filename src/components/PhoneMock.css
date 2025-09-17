@@ -51,6 +51,6 @@
   width: min(var(--phone-max-width), 100vw);
 }
   .screen-wrapper {
-  border-radius: 23px;
+  border-radius: 25px;
 }
 }
