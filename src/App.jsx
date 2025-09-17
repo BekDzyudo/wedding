@@ -1,5 +1,5 @@
 import './App.css'
-import PhoneMockUp from './components/phoneMockUp'
+import PhoneMockUp from './components/PhoneMockUp'
 
 function App() {
 
